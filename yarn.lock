@@ -8748,6 +8748,11 @@
   "resolved" "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz"
   "version" "4.0.1"
 
+"pigeon-maps@^0.19.0":
+  "integrity" "sha512-UZyhepchQfjO0uRvjy+QDpHeEeWBYM0Ne3IXKpBjwN7PYL9gNk+uBXllZz8yShfe7mcA6QSHftSp7a1Wpbo7kA=="
+  "resolved" "https://registry.npmjs.org/pigeon-maps/-/pigeon-maps-0.19.0.tgz"
+  "version" "0.19.0"
+
 "pinkie-promise@^2.0.0":
   "integrity" "sha1-ITXW36ejWMBprJsXh3YogihFD/o="
   "resolved" "https://registry.yarnpkg.com/pinkie-promise/-/pinkie-promise-2.0.1.tgz"
@@ -9867,6 +9872,11 @@
   "integrity" "sha512-K+Sw33DtTMengs8OdqFJI3glzNl1wBzSefD/ksQw/hJf9CnOHQAU6qy82eOrh0IRNt2G53sjr7qnnw1JDjvx1w=="
   "resolved" "https://registry.npmjs.org/react-hook-form/-/react-hook-form-6.15.4.tgz"
   "version" "6.15.4"
+
+"react-icons@^4.2.0":
+  "integrity" "sha512-rmzEDFt+AVXRzD7zDE21gcxyBizD/3NqjbX6cmViAgdqfJ2UiLer8927/QhhrXQV7dEj/1EGuOTPp7JnLYVJKQ=="
+  "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.2.0.tgz"
+  "version" "4.2.0"
 
 "react-is@^16.3.2", "react-is@^16.6.0", "react-is@^16.7.0", "react-is@^16.8.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="

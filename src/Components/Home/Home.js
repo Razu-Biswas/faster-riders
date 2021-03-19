@@ -1,43 +1,33 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
+import TransportOption from './TransportOption';
 import './Home.css';
+import bgImg from '../../images/BG.svg';
+import bus from '../../images/bus.png';
+import car from '../../images/car.png';
+import bike from '../../images/bike.png';
+import train from '../../images/train.png';
 
-const Home = () => {
-    return (
-        <div className="home-image">
-            <div className="header">
-                <nav className="nav">
-                    <ul>
-                        <li>
-                            <Link to="/home">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/login">Destination</Link>
-                        </li>
-                        <li>
-                            <Link to="/login">Blog</Link>
-                        </li>
-                        <li>
-                            <Link className="btn-book" to="/contact">Contact</Link>
-                        </li>
-                        <li>
-                            <Link to="/login">Login</Link>
-                        </li>
 
-                    </ul>
-                    
-                </nav>
-
-                <div>
-                    <div className="title-container">
-                        <h1>Faster Riders Team</h1>
-                    </div>
-                </div >
-
-            </div>
-        </div>
-    );
-};
+function Home() {
+	const setBGImg = {
+		backgroundImage: `url(${bgImg})`,
+		height: '90vh',
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: 'cover',
+	};
+	return (
+		<div className="container" style={setBGImg}>
+			<div
+				style={{ height: 'inherit' }}
+				className="d-flex align-items-center flex-wrap justify-content-center"
+			>
+				<TransportOption transportType="car" transportImg={car} />
+				<TransportOption transportType="train" transportImg={train} />
+				<TransportOption transportType="bus" transportImg={bus} />
+				<TransportOption transportType="bike" transportImg={bike} />
+			</div>
+		</div>
+	);
+}
 
 export default Home;

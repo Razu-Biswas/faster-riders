@@ -7,6 +7,7 @@ import { useContext } from 'react';
 import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router';
 import { createUserWithEmailAndPassword, handleFbSignIn, handleGoogleSignIn, handleSignOut, initializeLoginFramework, signInWithEmailAndPassword } from '../LoginManager/LoginManager';
+import { SignUpWithForm } from "../firebase/FirebaseAuth";
 
 
 firebase.initializeApp(firebaseConfig);
@@ -36,7 +37,7 @@ const Login = () => {
           handleResponse(res, true);
       })
   }
-  
+
   const signOut = () => {
       handleSignOut()
       .then( res => {

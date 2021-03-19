@@ -1,28 +1,16 @@
-.home-image{
-    background-image: url("../../images/Bg.png");
-    width: 100%;
-    height: auto;
-   
+.mainCard {
+	color: black;
+	height: 300px;
+	background-color: #fff;
 }
-
-.title-container{
-    color: mediumorchid;
-    text-align: center;
-    font-size: 2em;
+.mainCard img {
+	height: 200px;
+	width: 200px;
+	display: block;
+	margin: auto;
+	padding: 15px;
 }
-.nav{
-    margin-left: 600px;
-    padding-top: 20px;
+.mainCard .transportName {
+	color: black;
+	text-align: center;
 }
-.nav li{
-    display: inline;
-    margin-left: 50px;
-    
-}
-  
-.nav a{
-    text-decoration: none;
-    color: mediumorchid;
-    font-weight: bold;
-}
-

@@ -1,49 +1,41 @@
-
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import PrivateRoute from './components/routes/PrivateRoute';
+import PrivateRoute from './Components/routes/PrivateRoute';
+// import Home from './components/Home/Home';
 import Home from './Components/Home/Home';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import Login from './Components/Login/Login.js';
-import { createContext } from 'react';
-import { useState } from 'react';
-import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
-import Location from './Components/Location/Location';
-
-
-
-
-export const UserContext = createContext();
+// import SearchDestination from './components/LocationSearch/SearchDestination';
+import SearchDestination from './Components/LocationSearch/SearchDestination';
+// import Header from './components/Header/Header';
+import Header from './Components/Header/Header';
+// import IfLoginRoute from './components/routes/IfLoginRoute';
+import IfLoginRoute from './Components/routes/IfLoginRoute';
+// import Login from './components/Auth/Login';
+import Login from './Components/Auth/Login';
+// import SignUp from './components/Auth/SignUp';
+import SignUp from './Components/Auth/SignUp';
 
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState({})
-  return (
-    <UserContext.Provider value = {[loggedInUser, setLoggedInUser]}>
-      <h3>email: {loggedInUser.email}</h3>
-
-    <Router>
-      <Switch>
-        <Route path="/home">
-          <Home />
-        </Route>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <Route path="/contact">
-          <Login />
-        </Route>
-         <PrivateRoute path="/login">
-          <Location />
-        </PrivateRoute>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
-    </UserContext.Provider>
-  );
+	return (
+		<div>
+			<Router>
+				<Header />
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+					<PrivateRoute path="/destination/:type">
+						<SearchDestination />
+					</PrivateRoute>
+					<IfLoginRoute path="/login">
+						<Login />
+					</IfLoginRoute>
+					<IfLoginRoute path="/signup">
+						<SignUp />
+					</IfLoginRoute>
+				</Switch>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
