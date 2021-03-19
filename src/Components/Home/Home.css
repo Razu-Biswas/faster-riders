@@ -1,0 +1,28 @@
+.home-image{
+    background-image: url("../../images/Bg.png");
+    width: 100%;
+    height: auto;
+   
+}
+
+.title-container{
+    color: mediumorchid;
+    text-align: center;
+    font-size: 2em;
+}
+.nav{
+    margin-left: 600px;
+    padding-top: 20px;
+}
+.nav li{
+    display: inline;
+    margin-left: 50px;
+    
+}
+  
+.nav a{
+    text-decoration: none;
+    color: mediumorchid;
+    font-weight: bold;
+}
+
