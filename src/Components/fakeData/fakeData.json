@@ -1,102 +1,102 @@
 [{
     "id": 1,
     "transportType": "Car",
-    "capacity": 4,
-    "fare": 164
+    "capacity": 1,
+    "fare": 166
   },
   {
     "id": 3,
     "transportType": "Car",
-    "capacity": 4,
-    "fare": 264
+    "capacity": 2,
+    "fare": 310
   }
   ,
   {
     "id": 3,
     "transportType": "Car",
-    "capacity": 4,
-    "fare": 364
+    "capacity": 3,
+    "fare": 440
   }
   ,
   {
     "id": 4,
     "transportType": "Car",
     "capacity": 4,
-    "fare": 364
+    "fare": 560
   },{
     "id": 5,
     "transportType": "Bus",
     "capacity": 1,
-    "fare": 164
+    "fare": 155
   },
   {
     "id": 6,
     "transportType": "Bus",
-    "capacity": 1,
-    "fare": 264
+    "capacity": 2,
+    "fare": 290
   }
   ,
   {
     "id": 7,
     "transportType": "Bus",
-    "capacity": 1,
-    "fare": 364
+    "capacity": 3,
+    "fare": 430
   }
   ,
   {
     "id": 8,
     "transportType": "Bus",
-    "capacity": 1,
-    "fare": 364
+    "capacity": 4,
+    "fare": 550
   },{
     "id": 9,
     "transportType": "Train",
     "capacity": 1,
-    "fare": 164
+    "fare": 160
   },
   {
     "id": 10,
     "transportType": "Train",
-    "capacity": 1,
-    "fare": 264
+    "capacity": 2,
+    "fare": 250
   }
   ,
   {
     "id": 11,
     "transportType": "Train",
-    "capacity": 1,
-    "fare": 364
+    "capacity": 3,
+    "fare": 390
   }
   ,
   {
     "id": 12,
     "transportType": "Train",
-    "capacity": 1,
-    "fare": 364
+    "capacity": 4,
+    "fare": 440
   },{
     "id": 13,
     "transportType": "Bike",
     "capacity": 1,
-    "fare": 164
+    "fare": 120
   },
   {
     "id": 14,
     "transportType": "Bike",
     "capacity": 1,
-    "fare": 264
+    "fare": 210
   }
   ,
   {
     "id": 15,
     "transportType": "Bike",
     "capacity": 1,
-    "fare": 364
+    "fare": 330
   }
   ,
   {
     "id": 16,
     "transportType": "Bike",
     "capacity": 1,
-    "fare": 364
+    "fare": 360
   }
 ]
