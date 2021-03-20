@@ -7,11 +7,13 @@
 #### Extra  Feature  :
 1.Logout Button
 
-2.Added map,
+2.Password & Email validation and show errorMessage
 
-3.README file edit,
+3.Added map,
 
-4.Website Responsive
+4.README file edit,
+
+5.Website Responsive
 
 
 
