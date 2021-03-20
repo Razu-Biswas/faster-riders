@@ -2,14 +2,14 @@
 	margin-right: 10px;
 }
 .searchResult h5 svg {
-	color: gray;
+	color: lightcoral;
 }
 .searchResult .location svg {
 	font-size: 30px;
 	margin-right: 35px;
 	border: 1px solid white;
 	border-radius: 50%;
-	color: black;
+	color: rgb(211, 236, 230);
 }
 
 .searchHome {

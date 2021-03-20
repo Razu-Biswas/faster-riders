@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { useHistory, useLocation } from 'react-router';
 import { TourContext } from '../../Context/dataContext';
-// import { FirebaseInit, LoginWithGoogleIcon } from '../../firebase/FirebaseAuth';
 import { FirebaseInit, LoginWithGoogleIcon } from '../firebase/FirebaseAuth';
 
 function IconLogin() {

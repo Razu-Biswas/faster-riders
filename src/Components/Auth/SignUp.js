@@ -3,7 +3,6 @@ import { Form, Button } from 'react-bootstrap';
 import { Link, useHistory } from 'react-router-dom';
 import IconLogin from './IconLogin';
 import { useForm } from 'react-hook-form';
-// import { FirebaseInit, SignUpWithForm } from '../../firebase/FirebaseAuth';
 import { FirebaseInit, SignUpWithForm } from '../firebase/FirebaseAuth';
 
 function SignUp() {
@@ -103,12 +102,12 @@ function SignUp() {
 							name="confirmPassword"
 						/>
 					</Form.Group>
-					<Button variant="warning" type="submit" className="w-75 mt-3">
+					<Button variant="danger" type="submit" className="w-75 mt-3">
 						SignUp
 					</Button>
 					<p className="mt-5 d-flex w-75 flex-wrap">
 						Already have an Account?
-						<Link to="/login" className="text-warning">
+						<Link to="/login" className="text-danger">
 							Login
 						</Link>
 					</p>

@@ -33,7 +33,7 @@ function SearchResult({ resetSearch, location, transport }) {
 	};
 	return (
 		<Form onSubmit={resetSearch} className="searchResult">
-			<div className="bg-warning p-3 rounded">
+			<div className="bg-danger p-3 rounded">
 				<h3 className="my-3 text-light location">
 					<ImRoad />
 					{from}
@@ -61,7 +61,7 @@ function SearchResult({ resetSearch, location, transport }) {
 				</div>
 			))}
 
-			<Button variant="warning" type="submit" className="mt-2">
+			<Button variant="danger" type="submit" className="mt-2">
 				Search Again
 			</Button>
 		</Form>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router';
 import SearchForm from './SearchForm';
-// import SearchResult from './SearchResult';
 import SearchResult from './SerachResult';
 import PMap from './PMap';
 
@@ -41,7 +40,7 @@ function SearchDestination() {
 	return (
 		<div className="container">
 			<div className="row">
-				<div className="col-md-4 p-4 rounded bg-secondary">
+				<div className="col-md-4 p-4 rounded bg-primary">
 					{isSearch ? (
 						<SearchForm searchLocation={searchLocation} setData={setData} />
 					) : (

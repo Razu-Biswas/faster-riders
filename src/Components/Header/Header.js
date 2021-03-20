@@ -61,7 +61,7 @@ function Header() {
 							<li className="nav-item d-flex">
 								<h4>{userInformation?.name}</h4>
 								<button
-									className="btn btn-danger logoutBtn"
+									className="btn btn-success logoutBtn"
 									onClick={logOutBtn}
 								>
 									Logout

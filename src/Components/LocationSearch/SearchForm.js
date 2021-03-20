@@ -8,7 +8,7 @@ function SearchForm({ searchLocation, setData }) {
 				<Form.Label className="font-weight-bold">Pick From</Form.Label>
 				<Form.Control
 					type="text"
-					placeholder="Mirpur-1"
+					placeholder="Gulshan-1"
 					name="locationFrom"
 					onChange={setData}
 				/>
@@ -18,7 +18,7 @@ function SearchForm({ searchLocation, setData }) {
 				<Form.Label className="font-weight-bold">Pick To</Form.Label>
 				<Form.Control
 					type="text"
-					placeholder="Dhanmondi"
+					placeholder="Mirpur-14"
 					name="locationTo"
 					onChange={setData}
 				/>
@@ -28,13 +28,13 @@ function SearchForm({ searchLocation, setData }) {
 				<Form.Label className="font-weight-bold">Date</Form.Label>
 				<Form.Control
 					type="date"
-					placeholder="Dhanmondi"
+					placeholder="Mirpur14"
 					name="date"
 					onChange={setData}
 				/>
 			</Form.Group>
 
-			<Button variant="warning" type="submit">
+			<Button variant="danger" type="submit">
 				Search
 			</Button>
 		</Form>

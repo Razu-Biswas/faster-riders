@@ -67,17 +67,17 @@ function Login() {
 					>
 						<Form.Check type="checkbox" label="Remember Me" />
 						<Form.Label>
-							<Link className="text-warning" to="#">
+							<Link className="text-success" to="#">
 								Forgot Password
 							</Link>
 						</Form.Label>
 					</Form.Group>
-					<Button variant="warning" type="submit" className="w-75 mt-3">
+					<Button variant="danger" type="submit" className="w-75 mt-3">
 						Login
 					</Button>
 					<p className="mt-5 d-flex w-75 flex-wrap">
 						Don't have an account?
-						<Link to="/signup" className="text-warning">
+						<Link to="/signup" className="text-success">
 							Create an account
 						</Link>
 					</p>
