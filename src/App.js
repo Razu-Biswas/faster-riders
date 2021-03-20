@@ -1,22 +1,15 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import PrivateRoute from './components/routes/PrivateRoute';
 import PrivateRoute from './Components/routes/PrivateRoute';
-// import Home from './components/Home/Home';
 import Home from './Components/Home/Home';
-// import SearchDestination from './components/LocationSearch/SearchDestination';
 import SearchDestination from './Components/LocationSearch/SearchDestination';
-// import Header from './components/Header/Header';
 import Header from './Components/Header/Header';
-// import IfLoginRoute from './components/routes/IfLoginRoute';
 import IfLoginRoute from './Components/routes/IfLoginRoute';
-// import Login from './components/Auth/Login';
 import Login from './Components/Auth/Login';
-// import SignUp from './components/Auth/SignUp';
 import SignUp from './Components/Auth/SignUp';
-
+import './App.css';
 function App() {
 	return (
-		<div>
+		<div className="App">
 			<Router>
 				<Header />
 				<Switch>

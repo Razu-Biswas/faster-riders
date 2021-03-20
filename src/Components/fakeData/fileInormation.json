@@ -1,0 +1,23 @@
+[{
+    "id": 1,
+    "trName": "train",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCDdOazPvLU8M4dhtGMyTfecr_FeKJEp24kg&usqp=CAU"
+},
+{
+    "id": 2,
+    "trName": "bike",
+    "image": "https://www.nicepng.com/png/detail/211-2117041_chopper-motorcycle-logo-motorcycle-logo-png.png"
+},
+
+{
+    "id": 3,
+    "trName": "car",
+    "image": "https://png.pngtree.com/png-vector/20190129/ourmid/pngtree-sports-car-silhouette-simple-logo-png-image_380510.jpg"
+},
+{
+    "id": 4,
+    "trName": "bus",
+    "image": "https://www.pngitem.com/pimgs/m/94-947302_png-bus-ticket-traveling-bus-logo-transparent-png.png"
+}
+
+]

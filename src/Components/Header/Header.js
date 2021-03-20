@@ -24,21 +24,10 @@ function Header() {
 		<div className="navbar navbar-expand-lg  container Header">
 			<div className="container-fluid">
 				<Link className="navbar-brand brandName" to="/">
-					<h4>CITY TOUR TRACK</h4>
+					<h4>Faster Riders</h4>
 				</Link>
-				<button
-					className="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span className="navbar-toggler-icon"></span>
-				</button>
 				<div
-					className="collapse navbar-collapse justify-content-end"
+					className=" navbar-collapse justify-content-end"
 					id="navbarSupportedContent"
 				>
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -64,18 +53,19 @@ function Header() {
 						</li>
 						{!userLogin ? (
 							<li className="nav-item">
-								<Link className="nav-link  btn btn-warning" to="/login">
+								<Link className="nav-link  " to="/login">
 									Login
 								</Link>
 							</li>
 						) : (
 							<li className="nav-item d-flex">
+								<h4>{userInformation?.name}</h4>
 								<button
-									className="btn btn-warning logoutBtn"
+									className="btn btn-danger logoutBtn"
 									onClick={logOutBtn}
 								>
-									{userInformation?.name}
-									<RiLogoutCircleRLine />
+									Logout
+									
 								</button>
 							</li>
 						)}
