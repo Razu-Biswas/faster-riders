@@ -2,8 +2,6 @@ import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { TourContext } from '../../Context/dataContext';
 import './Header.css';
-import { RiLogoutCircleRLine } from 'react-icons/ri';
-// import { FirebaseInit, Logout } from '../../firebase/FirebaseAuth';
 import { FirebaseInit, Logout } from '../firebase/FirebaseAuth';
 
 function Header() {

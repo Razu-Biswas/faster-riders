@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Link, useHistory } from 'react-router-dom';
 import IconLogin from './IconLogin';
@@ -37,19 +37,32 @@ function SignUp() {
 	const onSubmit = (e) => {
 		const { email, confirmPassword, fullName } = createUser;
 		if (validatePass) {
-			SignUpWithForm(email, confirmPassword, fullName).then((res) => {
+			SignUpWithForm(email, confirmPassword, fullName)
+			.then((res) => {
 				res ? history.push('/login') : errMsg('something wrong');
-			});
+			})
+			.catch((err) => {
+				displayError(err.message)
+			})
 		}
 
 		e.preventDefault();
 	};
+
+	
 	const errMsg = (e) => {
+	
 		console.log(e);
 	};
+	const [showerror, setShowerror] = useState('');
+	const displayError = (e) => {
+		setShowerror(e);
+	}
 	return (
 		<div className="container  mt-5 ">
+			<h6 style={{color: 'red', fontWeight: 'bold'}}>{showerror}</h6>
 			<div className="w-75 d-block m-auto Auth">
+				<h5>Create New Account</h5>
 				<Form
 					onSubmit={onSubmit}
 					className="d-flex flex-column align-items-center"
@@ -103,7 +116,7 @@ function SignUp() {
 						/>
 					</Form.Group>
 					<Button variant="danger" type="submit" className="w-75 mt-3">
-						SignUp
+						Create an account
 					</Button>
 					<p className="mt-5 d-flex w-75 flex-wrap">
 						Already have an Account?
