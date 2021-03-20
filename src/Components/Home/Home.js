@@ -26,7 +26,7 @@ function Home() {
 			>
 
 				{
-					FileInfo.map((img) => <TransportOption transportType={img.trName} transportImg={img.image} /> )
+					FileInfo.map((img) => <TransportOption key={img.id} transportType={img.trName} transportImg={img.image} /> )
 				}
 
 			</div>

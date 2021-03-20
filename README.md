@@ -4,7 +4,7 @@
 ## Project Link and Name : [Faster Riders](https://faster-riders.web.app/).
 
 
-#### Bonus  Feature  :
+#### Extra  Feature  :
 1.Logout Button
 
 2.Added map,
